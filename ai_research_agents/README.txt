@@ -19,7 +19,7 @@ Installation:
 
 Clone the repository:
 
-	git clone https://github.com/yourusername/ai-llm-projects.git
+	git clone https://github.com/MehrBSh/LLM-Projects/ai-llm-projects.git
 	cd ai-llm-projects
 
 
@@ -70,5 +70,6 @@ Web Searcher fetches search results and summarizes them.
 Insight Researcher analyzes the summary, identifies key topics, and generates structured insights.
 
 Supervisor decides which agent should act next until the workflow finishes.
+
 
 The final insights are saved automatically to a text file for easy reference.
