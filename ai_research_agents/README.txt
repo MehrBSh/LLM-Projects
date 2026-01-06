@@ -19,7 +19,7 @@ Installation:
 
 Clone the repository:
 
-	git clone https://github.com/MehrBSh/LLM-Projects/ai-llm-projects.git
+	git clone https://github.com/MehrBSh/LLM-Projects/tree/main/ai_research_agents.git
 	cd ai-llm-projects
 
 
@@ -73,3 +73,4 @@ Supervisor decides which agent should act next until the workflow finishes.
 
 
 The final insights are saved automatically to a text file for easy reference.
+
