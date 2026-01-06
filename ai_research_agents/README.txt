@@ -19,8 +19,10 @@ Installation:
 
 Clone the repository:
 
-	git clone https://github.com/MehrBSh/LLM-Projects/tree/main/ai_research_agents.git
-	cd ai-llm-projects
+	git clone https://github.com/MehrBSh/LLM-Projects.git
+
+	cd LLM-Projects/ai_research_agents
+
 
 
 Create a virtual environment (recommended):
@@ -73,4 +75,5 @@ Supervisor decides which agent should act next until the workflow finishes.
 
 
 The final insights are saved automatically to a text file for easy reference.
+
 
