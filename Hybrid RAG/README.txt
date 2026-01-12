@@ -40,7 +40,7 @@ Installation:
 
 Clone the repository:
 	git clone https://github.com/MehrBSh/LLM-Projects.git
-	cd Hybrid-RAG
+	cd Hybrid RAG
 
 Create a virtual environment (recommended):
 	python -m venv venv
@@ -157,4 +157,5 @@ Only valid dataset columns can be used
 Answers are generated strictly from retrieved data
 
 No medical facts are hallucinated
+
 
