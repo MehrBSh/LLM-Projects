@@ -1,0 +1,5 @@
+pandas
+openpyxl
+chromadb
+numpy
+tqdm
