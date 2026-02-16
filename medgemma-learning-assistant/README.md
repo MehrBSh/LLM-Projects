@@ -1,4 +1,4 @@
-MedGemma Learning Assistant (fully local)
+# MedGemma Learning Assistant (fully local)
 
 A multimodal medical learning assistant with RAG, image understanding, flashcards, quizzes, and note‑taking.
 
