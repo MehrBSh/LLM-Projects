@@ -4,97 +4,97 @@ A multimodal medical learning assistant with RAG, image understanding, flashcard
 
 MedGemma Learning Assistant is a fully local, privacy‑preserving study tool built around:
 
-	Retrieval‑Augmented Generation (RAG) using PubMedQA
+Retrieval‑Augmented Generation (RAG) using PubMedQA
 
-	MedGemma for medical text + image reasoning
+MedGemma for medical text + image reasoning
 
-	Flashcard generation (from topics or your own Q&A)
+Flashcard generation (from topics or your own Q&A)
 
-	Quiz generation with explanations
+Quiz generation with explanations
 
-	Persistent notes with export to Markdown
+Persistent notes with export to Markdown
 
-	Streamlit web UI and CLI interface
+Streamlit web UI and CLI interface
 
 This project is designed for medical learners who want a fast, local, and transparent assistant for studying clinical topics.
 
 Features:
 
-RAG‑powered medical Q&A
-	Retrieves relevant PubMedQA chunks using SentenceTransformers
+RAG‑powered medical Q&A:
+-Retrieves relevant PubMedQA chunks using SentenceTransformers
 
-	Generates concise, educational answers
+-Generates concise, educational answers
 
-	Shows source snippets for transparency
+-Shows source snippets for transparency
 
-	Supports short conversation memory (last N turns)
+-Supports short conversation memory (last N turns)
 
-Image understanding
-	Upload a medical image (X‑ray, CT, ultrasound, etc.)
+Image understanding:
+-Upload a medical image (X‑ray, CT, ultrasound, etc.)
 
-	MedGemma interprets the image
+-MedGemma interprets the image
 
-	Optionally combines with RAG context
+-Optionally combines with RAG context
 
-Flashcards
-	Generate flashcards from:
+Flashcards:
+-Generate flashcards from:
 
-	A topic (e.g., “ARDS corticosteroids”)
+-A topic (e.g., “ARDS corticosteroids”)
 
-Your last Q&A
+Your last Q&A:
 
-	Save to a local SQLite deck
+-Save to a local SQLite deck
 
-	Review inside the Streamlit UI
+-Review inside the Streamlit UI
 
-Notes
-	Save any Q&A pair
+Notes:
+-Save any Q&A pair
 
-	View all notes
+-View all notes
 
-	Export to Markdown
+-Export to Markdown
 
-Quiz mode
-	Generate MCQs from a topic
+Quiz mode:
+-Generate MCQs from a topic
 
-	4‑option questions with correct answer
+-4‑option questions with correct answer
 
-	Explanations after each question
+-Explanations after each question
 
-Two interfaces
-	Streamlit web app (app.py)
+Two interfaces:
+-Streamlit web app (app.py)
 
-	Command‑line interface (query_rag.py)
+-Command‑line interface (query_rag.py)
 
-##Dataset
+##Dataset:
 
 - Default: [PubMed QA](https://huggingface.co/datasets/pubmed_qa) (`pubmed_qa`, subset `pqa_labeled`) — medical Q&A with abstract context and long answers.
 - Change dataset: Edit `build_rag_index.py`: `DATASET_NAME`, `DATASET_SUBSET`, and optionally add a `docs_from_*` helper if the schema differs.
 
 
 Installation:
-	1. Clone the repository
+1. Clone the repository
 	
-	bash
+bash
 	
 		git clone https://github.com/MehrBSh/LLM-Projects/medgemma-learning-assistant.git
 		
 		cd medgemma-learning-assistant
 		
-	2. Create a virtual environment
-	bash
+2. Create a virtual environment
+bash
 		python3 -m venv .venv
 		source .venv/bin/activate
-	3. Install dependencies
-	bash
+3. Install dependencies
+bash
 		pip install -r requirements.txt
-	4. Download MedGemma
+4. Download MedGemma
 		The model will download automatically on first run via Hugging Face.
 
 Build the RAG index:
 This step downloads PubMedQA and builds a ChromaDB index.
 
-	bash
+bash
 		python build_rag_index.py
 This creates
 
@@ -102,7 +102,7 @@ Code
 chroma_db/
     └── med_rag
 Run the Streamlit app:
-	bash
+bash
 		streamlit run app.py
 
 You’ll get a UI with tabs: Chat, Flashcards, Quiz, My Notes, Export
@@ -113,7 +113,7 @@ You’ll get a UI with tabs: Chat, Flashcards, Quiz, My Notes, Export
 
 
 Run the CLI:
-	bash
+bash
 		python query_rag.py
 
 
