@@ -21,6 +21,7 @@ This project is designed for medical learners who want a fast, local, and transp
 Features:
 
 RAG‑powered medical Q&A:
+
 -Retrieves relevant PubMedQA chunks using SentenceTransformers
 
 -Generates concise, educational answers
@@ -30,6 +31,7 @@ RAG‑powered medical Q&A:
 -Supports short conversation memory (last N turns)
 
 Image understanding:
+
 -Upload a medical image (X‑ray, CT, ultrasound, etc.)
 
 -MedGemma interprets the image
@@ -37,6 +39,7 @@ Image understanding:
 -Optionally combines with RAG context
 
 Flashcards:
+
 -Generate flashcards from:
 
 -A topic (e.g., “ARDS corticosteroids”)
@@ -48,6 +51,7 @@ Your last Q&A:
 -Review inside the Streamlit UI
 
 Notes:
+
 -Save any Q&A pair
 
 -View all notes
@@ -55,6 +59,7 @@ Notes:
 -Export to Markdown
 
 Quiz mode:
+
 -Generate MCQs from a topic
 
 -4‑option questions with correct answer
@@ -62,6 +67,7 @@ Quiz mode:
 -Explanations after each question
 
 Two interfaces:
+
 -Streamlit web app (app.py)
 
 -Command‑line interface (query_rag.py)
@@ -73,6 +79,7 @@ Two interfaces:
 
 
 Installation:
+
 1. Clone the repository
 	
 bash
@@ -82,27 +89,35 @@ bash
 		cd medgemma-learning-assistant
 		
 2. Create a virtual environment
+   
 bash
 		python3 -m venv .venv
 		source .venv/bin/activate
+		
 3. Install dependencies
+   
 bash
 		pip install -r requirements.txt
 4. Download MedGemma
 		The model will download automatically on first run via Hugging Face.
 
 Build the RAG index:
+
 This step downloads PubMedQA and builds a ChromaDB index.
 
 bash
 		python build_rag_index.py
+
 This creates
 
 Code
 chroma_db/
     └── med_rag
+
 Run the Streamlit app:
+
 bash
+
 		streamlit run app.py
 
 You’ll get a UI with tabs: Chat, Flashcards, Quiz, My Notes, Export
@@ -113,7 +128,9 @@ You’ll get a UI with tabs: Chat, Flashcards, Quiz, My Notes, Export
 
 
 Run the CLI:
+
 bash
+
 		python query_rag.py
 
 
