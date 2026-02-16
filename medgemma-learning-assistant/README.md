@@ -71,11 +71,16 @@ Two interfaces
 - Default: [PubMed QA](https://huggingface.co/datasets/pubmed_qa) (`pubmed_qa`, subset `pqa_labeled`) — medical Q&A with abstract context and long answers.
 - Change dataset: Edit `build_rag_index.py`: `DATASET_NAME`, `DATASET_SUBSET`, and optionally add a `docs_from_*` helper if the schema differs.
 
+
 Installation:
 	1. Clone the repository
+	
 	bash
+	
 		git clone https://github.com/MehrBSh/LLM-Projects/medgemma-learning-assistant.git
+		
 		cd medgemma-learning-assistant
+		
 	2. Create a virtual environment
 	bash
 		python3 -m venv .venv
