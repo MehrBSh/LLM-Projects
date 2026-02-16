@@ -91,21 +91,27 @@ bash
 2. Create a virtual environment
    
 bash
+
 		python3 -m venv .venv
+		
 		source .venv/bin/activate
 		
 3. Install dependencies
    
 bash
+
 		pip install -r requirements.txt
+		
 4. Download MedGemma
-		The model will download automatically on first run via Hugging Face.
+   
+The model will download automatically on first run via Hugging Face.
 
 Build the RAG index:
 
 This step downloads PubMedQA and builds a ChromaDB index.
 
 bash
+
 		python build_rag_index.py
 
 This creates
